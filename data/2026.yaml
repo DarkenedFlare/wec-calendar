@@ -1,0 +1,297 @@
+# FIA WEC 2026 season - full session-level detail
+#
+# Session start times pulled directly from each event's page on
+# fiawec.com (and, for future rounds, their raw .ics export at
+# https://www.fiawec.com/en/race/calendar/<id>) as of late July 2026.
+# Past rounds show actual times that were run; future rounds are
+# still shown as "TBC" on FIA's own site, so treat those as
+# provisional until closer to race week.
+#
+# Durations aren't reliably available for every session, so standard
+# WEC session lengths are used as a reasonable estimate: FP 90min
+# (Le Mans FPs are longer, set explicitly below), Qualifying 12min,
+# Hyperpole 10min, Race per its published distance/duration. Override
+# duration_minutes per session if you have more precise figures.
+
+season: 2026
+
+events:
+  - round: 0
+    name: Official Prologue
+    circuit: Autodromo Enzo e Dino Ferrari
+    location: Imola, Italy
+    timezone: Europe/Rome
+    notes: "Pre-season group test, not a points-scoring round."
+    sessions:
+      - name: Morning Session
+        start: "2026-04-14T09:00:00"
+        duration_minutes: 240
+      - name: Afternoon Session
+        start: "2026-04-14T14:00:00"
+        duration_minutes: 240
+
+  - round: 1
+    name: 6 Hours of Imola
+    circuit: Autodromo Enzo e Dino Ferrari
+    location: Imola, Italy
+    timezone: Europe/Rome
+    notes: "Season opener (moved up from the original Qatar season-opening slot)."
+    sessions:
+      - name: Free Practice 1
+        start: "2026-04-17T10:15:00"
+        duration_minutes: 90
+      - name: Free Practice 2
+        start: "2026-04-17T15:15:00"
+        duration_minutes: 90
+      - name: Free Practice 3
+        start: "2026-04-18T10:30:00"
+        duration_minutes: 60
+      - name: Qualifying - LMGT3
+        start: "2026-04-18T14:30:00"
+        duration_minutes: 12
+      - name: Hyperpole - LMGT3
+        start: "2026-04-18T14:50:00"
+        duration_minutes: 10
+      - name: Qualifying - Hypercar
+        start: "2026-04-18T15:10:00"
+        duration_minutes: 12
+      - name: Hyperpole - Hypercar
+        start: "2026-04-18T15:30:00"
+        duration_minutes: 10
+      - name: Race
+        start: "2026-04-19T13:00:00"
+        duration_minutes: 360
+
+  - round: 2
+    name: 6 Hours of Spa-Francorchamps
+    circuit: Circuit de Spa-Francorchamps
+    location: Stavelot, Belgium
+    timezone: Europe/Brussels
+    sessions:
+      - name: Free Practice 1
+        start: "2026-05-07T11:00:00"
+        duration_minutes: 90
+      - name: Free Practice 2
+        start: "2026-05-07T15:40:00"
+        duration_minutes: 90
+      - name: Free Practice 3
+        start: "2026-05-08T10:10:00"
+        duration_minutes: 60
+      - name: Qualifying - LMGT3
+        start: "2026-05-08T14:30:00"
+        duration_minutes: 12
+      - name: Hyperpole - LMGT3
+        start: "2026-05-08T14:55:00"
+        duration_minutes: 10
+      - name: Qualifying - Hypercar
+        start: "2026-05-08T15:20:00"
+        duration_minutes: 12
+      - name: Hyperpole - Hypercar
+        start: "2026-05-08T15:45:00"
+        duration_minutes: 10
+      - name: Race
+        start: "2026-05-09T14:00:00"
+        duration_minutes: 360
+
+  - round: 3
+    name: 24 Hours of Le Mans
+    circuit: Circuit de la Sarthe
+    location: Le Mans, France
+    timezone: Europe/Paris
+    notes: "The centerpiece of the season."
+    sessions:
+      - name: Free Practice 1
+        start: "2026-06-10T14:00:00"
+        duration_minutes: 180
+      - name: Qualifying - LMP2 & LMGT3
+        start: "2026-06-10T18:45:00"
+        duration_minutes: 30
+      - name: Qualifying - Hypercar
+        start: "2026-06-10T19:30:00"
+        duration_minutes: 30
+      - name: Free Practice 2
+        start: "2026-06-10T22:00:00"
+        duration_minutes: 120
+      - name: Free Practice 3
+        start: "2026-06-11T14:45:00"
+        duration_minutes: 120
+      - name: Hyperpole 1 - LMP2 & LMGT3
+        start: "2026-06-11T20:00:00"
+        duration_minutes: 20
+      - name: Hyperpole 2 - LMP2 & LMGT3
+        start: "2026-06-11T20:35:00"
+        duration_minutes: 15
+      - name: Hyperpole 1 - Hypercar
+        start: "2026-06-11T21:05:00"
+        duration_minutes: 20
+      - name: Hyperpole 2 - Hypercar
+        start: "2026-06-11T21:40:00"
+        duration_minutes: 15
+      - name: Free Practice 4
+        start: "2026-06-11T23:00:00"
+        duration_minutes: 120
+      - name: Warm-up
+        start: "2026-06-13T12:00:00"
+        duration_minutes: 15
+      - name: Race
+        start: "2026-06-13T16:00:00"
+        duration_minutes: 1440
+
+  - round: 4
+    name: 6 Hours of São Paulo
+    circuit: Autódromo José Carlos Pace
+    location: São Paulo, Brazil
+    timezone: America/Sao_Paulo
+    sessions:
+      - name: Free Practice 1
+        start: "2026-07-10T11:00:00"
+        duration_minutes: 90
+      - name: Free Practice 2
+        start: "2026-07-10T15:50:00"
+        duration_minutes: 90
+      - name: Free Practice 3
+        start: "2026-07-11T10:10:00"
+        duration_minutes: 60
+      - name: Qualifying - LMGT3
+        start: "2026-07-11T14:30:00"
+        duration_minutes: 12
+      - name: Hyperpole - LMGT3
+        start: "2026-07-11T14:50:00"
+        duration_minutes: 10
+      - name: Qualifying - Hypercar
+        start: "2026-07-11T15:10:00"
+        duration_minutes: 12
+      - name: Hyperpole - Hypercar
+        start: "2026-07-11T15:30:00"
+        duration_minutes: 10
+      - name: Race
+        start: "2026-07-12T11:30:00"
+        duration_minutes: 360
+
+  - round: 5
+    name: Lone Star Le Mans
+    circuit: Circuit of the Americas
+    location: Austin, TX, USA
+    timezone: America/Chicago
+    notes: "Times still marked TBC on fiawec.com - provisional, pulled from FIA's own feed."
+    sessions:
+      - name: Free Practice 1
+        start: "2026-09-04T11:30:00"
+        duration_minutes: 90
+      - name: Free Practice 2
+        start: "2026-09-04T16:30:00"
+        duration_minutes: 90
+      - name: Free Practice 3
+        start: "2026-09-05T11:00:00"
+        duration_minutes: 60
+      - name: Qualifying - LMGT3
+        start: "2026-09-05T15:00:00"
+        duration_minutes: 12
+      - name: Hyperpole - LMGT3
+        start: "2026-09-05T15:20:00"
+        duration_minutes: 10
+      - name: Qualifying - Hypercar
+        start: "2026-09-05T15:40:00"
+        duration_minutes: 12
+      - name: Hyperpole - Hypercar
+        start: "2026-09-05T16:00:00"
+        duration_minutes: 10
+      - name: Race
+        start: "2026-09-06T13:00:00"
+        duration_minutes: 360
+
+  - round: 6
+    name: 6 Hours of Fuji
+    circuit: Fuji Speedway
+    location: Oyama, Japan
+    timezone: Asia/Tokyo
+    notes: "Times still marked TBC on fiawec.com - provisional, pulled from FIA's own feed."
+    sessions:
+      - name: Free Practice 1
+        start: "2026-09-25T10:15:00"
+        duration_minutes: 90
+      - name: Free Practice 2
+        start: "2026-09-25T14:30:00"
+        duration_minutes: 90
+      - name: Free Practice 3
+        start: "2026-09-26T09:50:00"
+        duration_minutes: 60
+      - name: Qualifying - LMGT3
+        start: "2026-09-26T14:20:00"
+        duration_minutes: 12
+      - name: Hyperpole - LMGT3
+        start: "2026-09-26T14:40:00"
+        duration_minutes: 10
+      - name: Qualifying - Hypercar
+        start: "2026-09-26T15:00:00"
+        duration_minutes: 12
+      - name: Hyperpole - Hypercar
+        start: "2026-09-26T15:20:00"
+        duration_minutes: 10
+      - name: Race
+        start: "2026-09-27T11:00:00"
+        duration_minutes: 360
+
+  - round: 7
+    name: Qatar 1812km
+    circuit: Losail International Circuit
+    location: Qatar
+    timezone: Asia/Qatar
+    notes: "Approx. 1812km / ~10-11 hour race distance. Originally slated as the season opener, rescheduled here due to regional conflict. Times still marked TBC on fiawec.com - provisional, pulled from FIA's own feed."
+    sessions:
+      - name: Free Practice 1
+        start: "2026-10-22T15:00:00"
+        duration_minutes: 150
+      - name: Free Practice 2
+        start: "2026-10-22T19:30:00"
+        duration_minutes: 150
+      - name: Free Practice 3
+        start: "2026-10-23T13:00:00"
+        duration_minutes: 120
+      - name: Qualifying - LMGT3
+        start: "2026-10-23T17:00:00"
+        duration_minutes: 12
+      - name: Hyperpole - LMGT3
+        start: "2026-10-23T17:20:00"
+        duration_minutes: 10
+      - name: Qualifying - Hypercar
+        start: "2026-10-23T17:40:00"
+        duration_minutes: 12
+      - name: Hyperpole - Hypercar
+        start: "2026-10-23T18:00:00"
+        duration_minutes: 10
+      - name: Race
+        start: "2026-10-24T13:00:00"
+        duration_minutes: 660
+
+  - round: 8
+    name: 8 Hours of Bahrain (Season Finale)
+    circuit: Bahrain International Circuit
+    location: Sakhir, Bahrain
+    timezone: Asia/Riyadh
+    notes: "Season finale - championships decided here. Times still marked TBC on fiawec.com - provisional, pulled from FIA's own feed."
+    sessions:
+      - name: Free Practice 1
+        start: "2026-11-05T12:15:00"
+        duration_minutes: 210
+      - name: Free Practice 2
+        start: "2026-11-05T17:00:00"
+        duration_minutes: 210
+      - name: Free Practice 3
+        start: "2026-11-06T12:00:00"
+        duration_minutes: 180
+      - name: Qualifying - LMGT3
+        start: "2026-11-06T16:00:00"
+        duration_minutes: 12
+      - name: Hyperpole - LMGT3
+        start: "2026-11-06T16:20:00"
+        duration_minutes: 10
+      - name: Qualifying - Hypercar
+        start: "2026-11-06T16:40:00"
+        duration_minutes: 12
+      - name: Hyperpole - Hypercar
+        start: "2026-11-06T17:00:00"
+        duration_minutes: 10
+      - name: Race
+        start: "2026-11-07T14:00:00"
+        duration_minutes: 480
